@@ -28531,6 +28531,13 @@ CSS table of content
 }
 .home-one-banner-text h1 span {
   color: #FFF500;
+  position: relative;
+}
+.home-one-banner-text h1 span::after {
+  content: url(../images/shape/banner-text-shape.svg);
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
 }
 .home-one-banner-text p {
   margin-bottom: 60px;
