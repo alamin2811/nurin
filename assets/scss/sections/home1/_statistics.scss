@@ -1,0 +1,19 @@
+.statistics-section{
+    padding-top: 56px;
+    padding-bottom: 36px;
+    background: rgba(53, 53, 53, 0.26);
+    backdrop-filter: blur(5px);
+}
+
+.statistics-text{
+    margin-bottom: 20px;
+    h2{
+        font-family: fontfamily(bakbak);
+        @include textStyle(64px, 400, 130%);
+    }
+    p{
+        font-family: fontfamily(bakbak);
+        @include textStyle(16px, 400, 150%);
+        margin-bottom: 0px;
+    }
+}

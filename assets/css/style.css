@@ -28373,9 +28373,15 @@ CSS table of content
   top: 0px;
   width: 100%;
   overflow: hidden;
+  z-index: 99999;
 }
 .header-section.transparent-header {
   background: transparent;
+}
+.header-section.sticky {
+  background: rgba(0, 0, 0, 0.6) !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .header-inner {
@@ -28545,6 +28551,65 @@ CSS table of content
   width: 100%;
 }
 
+.home-one-banner-slider .swiper {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+.home-one-banner-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: right;
+}
+.home-one-banner-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.mint-live-section {
+  overflow-x: hidden;
+  padding-top: 91px;
+  padding-bottom: 47px;
+}
+.mint-live-section-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.mint-live-section-inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  animation: smoothSlider 15s linear infinite;
+}
+.mint-live-section-inner ul li {
+  padding: 15px 40px;
+  font-family: "Bakbak One", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-right: 40px;
+  border-radius: 35px;
+  border: 1px solid #00FFA3;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+@keyframes smoothSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /*--------------------------------
 06. home Style
 --------------------------------*/
@@ -28939,102 +29004,37 @@ CSS table of content
 }
 
 /*--------------------------------
+06. home 1 Style
+--------------------------------*/
+.statistics-section {
+  padding-top: 56px;
+  padding-bottom: 36px;
+  background: rgba(53, 53, 53, 0.26);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.statistics-text {
+  margin-bottom: 20px;
+}
+.statistics-text h2 {
+  font-family: "Bakbak One", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.statistics-text p {
+  font-family: "Bakbak One", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 0px;
+}
+
+/*--------------------------------
 07. footer Style
 --------------------------------*/
-.footer-chicken-img {
-  max-width: 264px;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-
-.footer-social-list {
-  margin-top: -60px;
-}
-.footer-social-list ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px -15px;
-  list-style: none;
-  padding: 0px;
-}
-.footer-social-list ul li {
-  width: 20%;
-  padding: 0px 15px;
-  margin-bottom: 30px;
-}
-.footer-social-list ul li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 210px;
-  background: rgba(29, 161, 242, 0.08);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 30px;
-}
-
-.main-footer {
-  text-align: center;
-  position: relative;
-  max-width: 569px;
-  margin: auto;
-  padding-top: 27px;
-  padding-bottom: 40px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.main-footer a {
-  position: relative;
-  z-index: 2;
-}
-.main-footer p {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
-}
-.main-footer .footer-shape {
-  position: absolute;
-  bottom: 0px;
-}
-
-@media only screen and (max-width: 1200px) {
-  .footer-social-list ul li a {
-    height: 180px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .footer-social-list ul li a {
-    height: 140px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .footer-social-list ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footer-social-list ul li {
-    width: 33.33%;
-  }
-  .footer-social-list ul li a {
-    height: 140px;
-  }
-  .footer-chicken-img {
-    max-width: 200px;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .footer-social-list ul li {
-    padding: 0px 10px;
-  }
-  .footer-social-list ul li a {
-    height: 100px;
-    padding: 24px;
-  }
+.footer-section {
+  min-height: 548px;
+  background: rgba(75, 75, 75, 0.4);
 }
