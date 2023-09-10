@@ -1,0 +1,37 @@
+.best-collection-section{
+    .section-title{
+        max-width: 771px;
+        width: 100%;
+        margin: auto;
+
+    }
+}
+
+.best-collection-content{
+    padding-top: 60px;
+}
+.best-collection-card{
+    border-radius: 20px;
+    border: 1px solid #FFE600;
+    background: rgba(75, 75, 75, 0.40);
+    backdrop-filter: blur(100px);
+    padding: 35px 28px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.best-collection-img{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.best-collection-text{
+    h4{
+        margin-bottom: 15px;
+    }
+}

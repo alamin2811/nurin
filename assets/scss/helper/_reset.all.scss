@@ -39,7 +39,7 @@ h2{
     @include textStyle(40px, 400, 120%);
 }
 h3{
-    @include textStyle(36px, 400, 36px);
+    @include textStyle(32px, 400, 36px);
 }
 h4{
     @include textStyle(24px, 400, 167%);
@@ -218,7 +218,8 @@ img {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1320px;
+        max-width: 1360px;
+        padding: 0px 20px;
     }
     .container-custom{
         max-width: 1290px;
