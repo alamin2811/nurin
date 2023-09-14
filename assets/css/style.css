@@ -445,7 +445,7 @@ img {
 }
 .section-title h2 {
   margin-bottom: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
 }
 .section-title p {
   margin-bottom: 0px;
@@ -454,9 +454,22 @@ img {
 }
 .section-title.center {
   text-align: center;
+  max-width: 732px;
+  margin: auto;
 }
 .section-title.center .title {
   justify-content: center;
+}
+
+.avater {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avater img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*------------------------------------------------------------------------------------
@@ -29078,7 +29091,82 @@ CSS table of content
 }
 
 .best-collection-text h4 {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+}
+.best-collection-text .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+.best-collection-text .user p {
+  color: #FFF;
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 19px;
+  margin-bottom: 0px;
+}
+.best-collection-text .user-img {
+  height: 30px;
+  width: 30px;
+}
+.best-collection-text .card-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6%;
+}
+.best-collection-text .card-btns button {
+  width: 47%;
+  padding: 12px;
+  transition: 0.5s;
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.best-collection-text .card-btns button.bid-btn {
+  background: #FFE600;
+  border: none;
+  border: 1px solid #FFE600;
+  outline: none;
+  color: #1A1A1A;
+}
+.best-collection-text .card-btns button.bid-btn:hover {
+  background: transparent;
+  border: 1px solid #FFE600;
+  color: #FFFFFF;
+}
+.best-collection-text .card-btns button.detail-btn {
+  background: transparent;
+  border: 1px solid #FFE600;
+  color: #FFFFFF;
+}
+.best-collection-text .card-btns button.detail-btn:hover {
+  background: #FFE600;
+  border: none;
+  outline: none;
+  color: #1A1A1A;
+}
+
+.create-and-sell-card {
+  border-radius: 20px;
+  background: rgba(0, 255, 163, 0.1254901961);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  padding: 42px 50px;
+  margin-top: 40px;
+}
+
+.create-and-sell-column h3 {
+  margin-top: 47px;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+.create-and-sell-column p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /*--------------------------------

@@ -32,6 +32,64 @@
 
 .best-collection-text{
     h4{
-        margin-bottom: 15px;
+        margin-bottom: 13px;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 32px;
+        p{
+            color: #FFF;
+            font-family: Bakbak One;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 19px;
+            margin-bottom: 0px;
+        }
+    }
+    .user-img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .card-btns{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6%;
+        button{
+            width: 47%;
+            padding: 12px;
+            transition: 0.5s;
+            font-family: Bakbak One;
+            font-size: 20px;
+            font-weight: 400;
+            border-radius: 5px;
+            &.bid-btn{
+                background: #FFE600;
+                border: none;
+                border: 1px solid #FFE600;
+                outline: none;
+                color: #1A1A1A;
+                &:hover{
+                    background: transparent;
+                    border: 1px solid #FFE600;
+                    color: #FFFFFF;
+                }
+            }
+            &.detail-btn{
+                background: transparent;
+                border: 1px solid #FFE600;
+                color: #FFFFFF;
+                &:hover{
+                    background: #FFE600;
+                    border: none;
+                    outline: none;
+                    color: #1A1A1A;
+                }
+            }
+        }
     }
 }
+
