@@ -29069,7 +29069,7 @@ CSS table of content
   padding-top: 60px;
 }
 
-.best-collection-card {
+.item-card {
   border-radius: 20px;
   border: 1px solid #FFE600;
   background: rgba(75, 75, 75, 0.4);
@@ -29078,28 +29078,29 @@ CSS table of content
   padding: 35px 28px;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.best-collection-img {
+.item-img {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 60px;
 }
-.best-collection-img img {
+.item-img img {
   height: 100%;
   width: 100%;
 }
 
-.best-collection-text h4 {
+.item-text h4 {
   margin-bottom: 13px;
 }
-.best-collection-text .user {
+.item-text .user {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 32px;
 }
-.best-collection-text .user p {
+.item-text .user p {
   color: #FFF;
   font-family: Bakbak One;
   font-size: 20px;
@@ -29107,17 +29108,17 @@ CSS table of content
   margin-left: 19px;
   margin-bottom: 0px;
 }
-.best-collection-text .user-img {
+.item-text .user-img {
   height: 30px;
   width: 30px;
 }
-.best-collection-text .card-btns {
+.item-text .card-btns {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6%;
 }
-.best-collection-text .card-btns button {
+.item-text .card-btns button {
   width: 47%;
   padding: 12px;
   transition: 0.5s;
@@ -29126,24 +29127,24 @@ CSS table of content
   font-weight: 400;
   border-radius: 5px;
 }
-.best-collection-text .card-btns button.bid-btn {
+.item-text .card-btns button.bid-btn {
   background: #FFE600;
   border: none;
   border: 1px solid #FFE600;
   outline: none;
   color: #1A1A1A;
 }
-.best-collection-text .card-btns button.bid-btn:hover {
+.item-text .card-btns button.bid-btn:hover {
   background: transparent;
   border: 1px solid #FFE600;
   color: #FFFFFF;
 }
-.best-collection-text .card-btns button.detail-btn {
+.item-text .card-btns button.detail-btn {
   background: transparent;
   border: 1px solid #FFE600;
   color: #FFFFFF;
 }
-.best-collection-text .card-btns button.detail-btn:hover {
+.item-text .card-btns button.detail-btn:hover {
   background: #FFE600;
   border: none;
   outline: none;
@@ -29167,6 +29168,58 @@ CSS table of content
 .create-and-sell-column p {
   font-size: 20px;
   font-weight: 400;
+}
+
+.explore-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 51px;
+}
+
+.explore-tab-btns ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 560px;
+  width: 100%;
+  gap: 24px;
+}
+.explore-tab-btns ul li button {
+  border-radius: 5px;
+  border: 1px solid #FFE600;
+  background: transparent;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
+  transition-delay: 0.5s;
+}
+.explore-tab-btns ul li button.active, .explore-tab-btns ul li button:hover {
+  border: 1px solid transparent;
+  background: #FFE600 !important;
+  color: #1A1A1A !important;
+}
+
+.view-all-btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Bakbak One;
+  font-size: 20px;
+  font-weight: 400;
+  transition-delay: 0.5s;
+  background: #FFE600 !important;
+  color: #1A1A1A !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 70px;
+  height: 68px;
+  width: 218px;
 }
 
 /*--------------------------------
