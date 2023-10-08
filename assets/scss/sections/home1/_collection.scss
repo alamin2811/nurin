@@ -1,0 +1,27 @@
+.collection-images{
+    overflow: hidden;
+}
+.collection-auto-slider{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 80px;
+    overflow: hidden;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        animation: smoothSlider 15s linear infinite;
+        li {
+            width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
