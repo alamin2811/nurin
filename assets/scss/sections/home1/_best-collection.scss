@@ -10,7 +10,7 @@
 .best-collection-content{
     padding-top: 60px;
 }
-.best-collection-card{
+.item-card{
     border-radius: 20px;
     border: 1px solid #FFE600;
     background: rgba(75, 75, 75, 0.40);
@@ -18,9 +18,10 @@
     padding: 35px 28px;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.best-collection-img{
+.item-img{
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 60px;
@@ -30,7 +31,7 @@
     }
 }
 
-.best-collection-text{
+.item-text{
     h4{
         margin-bottom: 13px;
     }

@@ -1,0 +1,36 @@
+.top-seller-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 94px;
+    button{
+        margin-left: auto;
+        margin-right: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+.top-seller-card{
+    padding: 12px;
+    border-radius: 15px;
+    border: 0.25px solid #FFE600;
+    background: #1F1F1F;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .top-seller-img{
+
+    }
+    .top-seller-text{
+        h5{
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+}

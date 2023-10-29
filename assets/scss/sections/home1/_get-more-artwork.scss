@@ -1,0 +1,48 @@
+.get-artwork-text{
+    max-width: 615px;
+    width: 100%;
+    h2{
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 86px;
+        margin-bottom: 20px;
+        span{
+            color: #FFE600;
+        }
+    }
+    p{
+        margin-bottom: 40px;
+    }
+
+    button{
+        width: 180px;
+        margin-right: 24px;
+        padding: 20px;
+        font-family: Bakbak One;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+}
+
+.artwork-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+.artwork-img-card1{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+.artwork-img-card2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 12px;
+}

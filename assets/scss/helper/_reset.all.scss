@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: fontfamily(bai);
+    font-family: fontfamily(inter);
     @include textStyle(16px, 400, 150%);
     color: color(whiteColor);
     background: url(../images/bg/nurin-bg.webp);
