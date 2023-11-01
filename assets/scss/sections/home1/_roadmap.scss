@@ -1,0 +1,120 @@
+.roadmap-section{
+    .view-all-btn{
+        width: 283px;
+    }
+}
+.roadmap-content{
+    margin-top: 75px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    .roadmap-divider{
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: #FFE600;
+        top: 0px;
+        .roadmap-divider-inner{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            &::after{
+                content: '';
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background: #FFE600;
+                top: -2px;
+                left: -4.5px;
+                display: flex;
+                position: absolute;
+            }
+            &::before{
+                content: '';
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background: #FFE600;
+                bottom: -2px;
+                left: -4.5px;
+                display: flex;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.roadmap-card{
+    border-radius: 15px;
+    background: rgba(75, 75, 75, 0.40);
+    padding: 37px 28px 23px 28px;
+    position: relative;
+    margin-bottom: 50px;
+    &::after{
+        content: '';
+        position: absolute;
+        background: #FFE600;
+        height: 1px;
+        width: 35px;
+        top: 49.5%;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background: #FFE600;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: 47%;
+    }
+    &1,
+    &3,
+    &5{
+        margin-right: 20px;
+        &::after{
+            right: -35px;
+        }
+        &::before{
+            right: -39px;
+        }
+    }
+    &2,
+    &4{
+        margin-left: 20px;
+        &::after{
+            left: -35px;
+        }
+        &::before{
+            left: -39px;
+        }
+    }
+    &2{
+        margin-top: 120px;
+    }
+    .roadmap-date{
+        background: rgba(75, 75, 75, 0.40);
+        border-radius: 5px;
+        position: absolute;
+        top: -17px;
+        left: 28px;
+        padding: 5px 10px;
+        p{
+            margin-bottom: 0px;
+            color: #FFE600;
+            font-family: fontfamily(urbanist);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            border-radius: 5px;
+        }
+    }
+    h5{
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+}

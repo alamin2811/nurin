@@ -6,6 +6,9 @@ $inter: 'Inter', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 $bakbak: 'Bakbak One', cursive;
 
+/*-- Urbanist font family --*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$urbanist: 'Urbanist', sans-serif;
 
 
 //font family functions
@@ -14,6 +17,7 @@ $bakbak: 'Bakbak One', cursive;
     $fontFamily: (
       inter: $inter,
       bakbak: $bakbak,
+      urbanist: $urbanist,
     );
     
     @return map-get($fontFamily, $key);
