@@ -1,0 +1,59 @@
+.breadcumbs-section{
+    background: url(../images/bg/breadcumbs-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+    margin-top: 101px;
+}
+
+.breadcumbs-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 338px;
+    h1{
+        margin-bottom: 13px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        li{
+            position: relative;
+            a{
+                color: #FFF;
+                font-size: 32px;
+                font-weight: 400;
+            }
+            &::after{
+                content: '';
+                height: 14px;
+                width: 1px;
+                background: #FFFFFF;
+                left: -30px;
+                top: 6px;
+                position: absolute;
+            }
+            &:nth-child(1){
+                &::after{
+                    display: none;
+                }
+            }
+            &.active{
+                a{
+                    color: #00FFA3;
+                }
+                &:after{
+                    background: #00FFA3;
+                }
+            }
+        }
+    }
+}

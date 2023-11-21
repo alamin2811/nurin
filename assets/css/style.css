@@ -28387,6 +28387,61 @@ CSS table of content
   text-transform: uppercase;
 }
 
+.breadcumbs-section {
+  background: url(../images/bg/breadcumbs-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px 0px;
+  margin-top: 101px;
+}
+
+.breadcumbs-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 338px;
+}
+.breadcumbs-content h1 {
+  margin-bottom: 13px;
+}
+.breadcumbs-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.breadcumbs-content ul li {
+  position: relative;
+}
+.breadcumbs-content ul li a {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 400;
+}
+.breadcumbs-content ul li::after {
+  content: "";
+  height: 14px;
+  width: 1px;
+  background: #FFFFFF;
+  left: -30px;
+  top: 6px;
+  position: absolute;
+}
+.breadcumbs-content ul li:nth-child(1)::after {
+  display: none;
+}
+.breadcumbs-content ul li.active a {
+  color: #00FFA3;
+}
+.breadcumbs-content ul li.active:after {
+  background: #00FFA3;
+}
+
 /*--------------------------------
 04. Header style
 --------------------------------*/
@@ -28882,73 +28937,6 @@ CSS table of content
     display: none;
   }
 }
-.faq-content {
-  max-width: 770px;
-  margin: auto;
-  margin-top: 45px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.faq-content .faq-shape {
-  position: absolute;
-  top: -70%;
-}
-.faq-content .faq-question {
-  border-top: 1px dashed rgba(0, 0, 0, 0.25);
-  padding: 20px 0px 20px 0px;
-  margin-bottom: 0px;
-  position: relative;
-  transition: 0.3s;
-}
-.faq-content .faq-question:nth-last-child(1) {
-  margin-bottom: 0px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
-}
-.faq-content .accordion {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 15px;
-  padding-bottom: 20px;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-.faq-content .accordion::after {
-  content: url(../images/icons/icon-plus.svg);
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.faq-content .accordion.active {
-  padding-bottom: 12px;
-}
-.faq-content .accordion.active::after {
-  content: url(../images/icons/icon-minuse.svg);
-  position: absolute;
-  top: -10px;
-}
-.faq-content .accordion-panel {
-  padding: 0px;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  color: #444444;
-}
-.faq-content .accordion-panel p {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-.faq-content .accordion-panel p a {
-  color: #FFF500;
-  opacity: 80%;
-}
-
 /*--------------------------------
 06. home 1 Style
 --------------------------------*/
@@ -29413,6 +29401,73 @@ CSS table of content
 .roadmap-card h5 {
   font-weight: 400;
   margin-bottom: 18px;
+}
+
+.faq-content {
+  max-width: 770px;
+  margin: auto;
+  margin-top: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.faq-content .faq-shape {
+  position: absolute;
+  top: -70%;
+}
+.faq-content .faq-question {
+  border-top: 1px dashed rgba(0, 0, 0, 0.25);
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 0px;
+  position: relative;
+  transition: 0.3s;
+}
+.faq-content .faq-question:nth-last-child(1) {
+  margin-bottom: 0px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+}
+.faq-content .accordion {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.faq-content .accordion::after {
+  content: url(../images/icons/icon-plus.svg);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.faq-content .accordion.active {
+  padding-bottom: 12px;
+}
+.faq-content .accordion.active::after {
+  content: url(../images/icons/icon-minuse.svg);
+  position: absolute;
+  top: -10px;
+}
+.faq-content .accordion-panel {
+  padding: 0px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  color: #444444;
+}
+.faq-content .accordion-panel p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.faq-content .accordion-panel p a {
+  color: #FFF500;
+  opacity: 80%;
 }
 
 /*--------------------------------
